@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!--========================-->
+	<!--※※【網頁顯示資訊設定】※※-->	
+	<!--========================-->
+	
+	<!--使用編碼-->
+	<meta charset="UTF-8">
+	
+	<!--頁籤設定-->
+	<title>書豪練習作：六角西餐廳</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!--把螢幕解析度的寬度變成載具的寬度-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--網站描述與關鍵字設定-->
+	<meta name="description" content="此為六角學院RWD課程的作業：六角西餐廳。使用響應式網站(RWD)技術製作">
+	<meta name="keywords" content="六角學院, 六角西餐廳, RWD">
+
+	<!--網站貼在Facebook上時顯示的資訊-->
+	<meta property="og:title" content="六角西餐廳">
+	<meta property="og:description" content="書豪練習作：六角西餐廳(RWD)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://zshao1031.github.io/HexRestaurant/">
+	<meta property="og:image" content="img/thumbnail.jpg">
+
+	<!--IE相容性設定-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!--載入google font的Roboto字體-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&amp;subset=chinese-traditional" rel="stylesheet">
+
+	<!--載入Font Awesome的Icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!--載入CSS-->
+	<link rel="stylesheet" href="css/CSSReset.css">
+	<link rel="stylesheet" href="css/all.css">
+
+
+</head>
+
+<body>
+	<!--網頁容器-->
+	<div class="wrap">
+
+		<!--表頭-->
+		<div class="header">
+			<!--主Logo、主選單區塊-->
+			<div class="mainMenuArea">
+				<h1><a href="index.html" class="mainLogo" title="返回首頁">六角西餐廳</a></h1>
+				<div class="hamburgerMenu_Button"><i class="fas fa-bars"></i></div>
+				<ul class="mainMenu">
+					<li><a href="index.html">餐廳簡介</a></li>
+					<li><a href="">線上訂購</a></li>
+					<li><a href="">會員登入</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+
+			<!--橫幅中間的slogan-->
+			<div class="sloganArea">
+				<h2 class="slogan">咬一口就無法忘懷的漢堡</h2>
+				<h3 class="subtitle">
+					七夕絕對無法錯過的好滋味
+					<br>
+					<i class="fas fa-utensils"></i>
+					六角大漢堡
+					<i class="fas fa-utensils"></i>
+				</h3>
+			</div>
+
+			<!--漢堡選單的選單-->
+			<div class="hamburgerMenu">
+				<h3>選單</h3>
+				<ul>
+					<li class="menuButtons">餐廳簡介</li>
+					<li class="menuButtons">線上訂購</li>
+					<li class="menuButtons">會員登入</li>
+				</ul>
+				<div class="closeMenu_Button">X</div>
+			</div>
+		</div>
+
+		<!--餐廳特色-->
+		<div class="featureArea">
+			
+			<!--標題-->
+			<ul class="featureTitle">
+				<li class="titleHr"><hr></li>
+				<li class="titleText">
+					<h3>客人總是在詢問</h3>
+					<h3>這麼好吃的秘訣是什麼</h3>
+				</li>
+				<li class="titleHr"><hr></li>
+			</ul>
+			
+			<!--圖文說明-->
+			<ul class="featureList">
+				<li class="featureItem feature_Vegetables">
+					<div class="picture"></div>
+					<h3>台灣本土蔬菜</h3>
+					<p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+				</li>
+
+				<li class="featureItem feature_Chef">
+					<div class="picture"></div>
+					<h3>專業米其林廚師</h3>
+					<p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+				</li>
+
+				<li class="featureItem feature_Professional">
+					<div class="picture"></div>
+					<h3>對於專業不能退讓</h3>
+					<p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+				</li>
+
+				<div class="clearfix"></div>
+			</ul>
+
+		</div>
+
+		<!--今日主廚-->
+		<div class="chefArea">
+			<div class="chefPicture"></div>
+			<div class="chefText">
+				<h3>今日主廚：帕金森、梅在帕</h3>
+				<h4>Tody Chef: Plum in Shock</h4>
+				<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<!--顧客推薦-->
+		<div class="recommendArea">
+			
+			<!--標題-->
+			<h3>聽聽別人的感想</h3>
+
+			<!--顧客圖文說明-->
+			<ul class="recommendList">
+				<li class="recommendItem">
+					<img class="customerPicture" src="img/avatar_1.png" alt="">
+					<h4>高雄一口吃</h4>
+					<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+					<p class="customerName"> -- 產品經理</p>
+				</li>
+
+				<li class="recommendItem">
+					<img class="customerPicture" src="img/avatar_2.png" alt="">					
+					<h4>廟口小霸王</h4>
+					<p>這真是太好吃啦！簡直好吃到要升天了！！！不但主餐美味、飯後甜點也是一絕，要是我以後吃不到該怎麼辦～～～</p>
+					<p class="customerName"> -- 金身道士</p>
+				</li>
+
+				<li class="recommendItem">
+					<img class="customerPicture" src="img/avatar_3.png" alt="">
+					<h4>春天也來了</h4>
+					<p>肉質鮮美、口感扎實、醬汁甜而不膩、再搭配爽口的湯品，令人大飽口福。今晚又有音樂演奏，整體令人相當享受！</p>
+					<p class="customerName"> -- 美麗萬分</p>
+				</li>
+
+				<div class="clearfix"></div>
+			</ul>
+
+		</div>
+
+		<!--預先訂位-->
+		<div class="bookingArea">
+			<!--標題-->
+			<h3>我們的位置不太夠坐<br>要不要先訂位呢？</h3>
+			
+			<div class="bookingInfoArea">
+				<div class="map"></div>
+				<form class="inputArea" action="index.html">
+					<label for="personName">姓名</label>
+					<input id="personName" type="text" class="inputTexts" name="personName" placeholder="六角講師吃尾牙">
+
+					<label for="personTel">電話</label>
+					<input id="personTel" type="text" class="inputTexts" name="personTel" placeholder="02-1234567">
+
+					<label for="personEmail">信箱</label>
+					<input id="personEmail" type="text" class="inputTexts" name="personEmail" placeholder="test@gmail.com">
+
+					<label for="personNum">人數</label>
+					<input id="personNum" type="text" name="personNum" class="inputTexts">
+
+					<label>是否需要素食</label>
+					<label for="eatVegetarian" class="radioTitles">是</label>
+					<input id="eatVegetarian" type="radio" class="radios" name="Vegetarian" value="Vegetarian" checked>
+					<label for="notEatVegetarian" class="radioTitles">否</label>
+					<input id="notEatVegetarian" type="radio" class="radios" name="Vegetarian" value="nonVegetarian">
+					<div class="clearfix"></div>
+
+					<input type="submit" value="送出" class="submit inputButtons">
+					<div class="cancelButton inputButtons">取消</div>
+				</form>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!--表尾-->
+		<ul class="footer">
+			
+			<li class="aboutArea">
+				<h3>關於 六角西餐廳</h3>
+				<p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+			</li>
+			
+			<li class="contactArea">
+				<h3>聯絡方式</h3>
+				<p>•	高雄市中正五路到底</p>
+				<p>•	+886 886 886</p>
+				<p>•	service@hexschool.com</p>
+			</li>
+			
+			<li class="logosArea">
+				<h3><a href="index.html" title="返回首頁">六角西餐廳</a></h3>
+				<div class="clearfix"></div>
+				<ul>
+					<li class="icons googlePlusIcon"><i class="fab fa-google-plus-square"></i></li>
+					<li class="icons twitterIcon"><i class="fab fa-twitter-square"></i></li>
+					<li class="icons facebookIcon"><i class="fab fa-facebook-square"></i></li>
+					<div class="clearfix"></div>
+				</ul>
+				<div class="clearfix"></div>
+			</li>
+
+			<div class="clearfix"></div>
+		</ul>
+		
+
+	</div>
+
+</body>
+	
+</html>

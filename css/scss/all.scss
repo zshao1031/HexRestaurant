@@ -1,0 +1,766 @@
+/*===========================*/
+/*【設定變數】*/
+
+/*指定顏色*/
+$color_Brown: #3D1101;
+$color_White: #FAFAFA;
+$color_Grey: #EFE9E7;
+
+/*RWD切換尺寸時機*/
+$size_MiddleVersion: 767px;
+$size_SmallVersion: 600px;
+$size_MinimumVersion: 320px;
+
+/*===========================*/
+/*【通用設定】*/
+
+/*使padding與border不會增加總寬度*/
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*清除浮動用*/
+.clearfix
+{
+    clear: both;
+}
+
+/*===========================*/
+
+html, body
+{
+    font-family:  'Roboto', sans-serif, 微軟正黑體;
+    //font-family: 微軟正黑體;
+    background-color: #333;
+}
+
+/*網頁容器*/
+.wrap
+{   
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    background-color: $color_Grey;
+}
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+        
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    
+}
+
+/*===========================*/
+/*表頭*/
+.header
+{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background-color: black;
+    background-image: url("../img/header_desktop.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*主Logo、主選單區塊*/
+.mainMenuArea
+{
+    background-color: rgba(black, 0.75);
+    padding: 16px 4% 16px 4%;
+}
+
+/*主Logo*/
+.mainLogo
+{
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+/*漢堡選單*/
+.hamburgerMenu
+{
+    display: none;
+    
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+    background-color: rgba(black,0.9);
+    padding: 20px 8%;
+
+    & h3
+    {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        color: $color_White;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.closeMenu_Button
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $color_White;
+    padding: 4px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: solid 1px $color_White;
+    border-radius: 100%;
+}
+
+.menuButtons
+{
+    color: $color_White;
+    font-size: 20px;
+    line-height: 60px;
+    border-bottom: solid 1px $color_White;
+}
+
+.hamburgerMenu_Button
+{
+    float: right;
+    display: none;
+
+    & i
+    {
+        font-size: 24px;
+        color: white;
+    }
+}
+
+
+
+
+/*主選單*/
+.mainMenu
+{
+    float: right;
+    margin-right: 6px;    
+}
+
+.mainMenu li
+{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 30px;
+    
+    & a
+    {
+        color: #FFFFFF;
+    }
+}
+
+/*橫幅中間的slogan*/
+.sloganArea
+{
+    background-color: rgba(black, 0.35);
+    width: 460px;
+    
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%) translateY(50%);
+
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 22px 26px 22px;
+
+    & h2
+    {
+        font-size: 36px;
+        line-height: 48px;
+
+        margin-bottom: 16px;
+    }
+
+    & h3
+    {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+    
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    /*表頭*/
+    .header { background-image: url("../img/header_mobile.png"); }
+    
+    /*主選單*/
+    .mainMenu { display: none; }
+
+    /*漢堡選單*/
+    .hamburgerMenu_Button { display: block; }
+    
+    /*橫幅中間的slogan*/
+    .sloganArea { width: 92%; }
+}
+
+
+/*===========================*/
+/*表尾*/
+.footer
+{
+    width: 100%;
+    padding: 50px 4%;
+    background-color: $color_Grey;
+}
+
+.footer li
+{
+    float: left;
+}
+
+.aboutArea
+{
+    width: 33%;
+}
+
+.contactArea
+{ 
+    width: 30%;
+    padding-left: 2%;
+}
+
+.logosArea
+{
+    width: 37%;
+}
+
+
+.aboutArea, .contactArea
+{
+    & h3
+    {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        color: $color_Brown;
+        font-weight: 500;
+    }
+    
+    & p
+    {
+        font-size: 16px;
+        line-height: 21px;
+        color: $color_Brown;
+    }
+}
+
+/*社群LOGO*/
+.logosArea
+{
+    & h3 a
+    {
+        display: block;
+        float: right;
+        margin-bottom: 22px;
+        color: $color_Brown;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 49px;
+        font-weight: 700;
+    }
+
+    & ul
+    {
+        float: right;
+    }
+}
+
+.icons
+{
+    float: left;
+    font-size: 31px;
+    line-height: 36px;
+    padding-left: 12px;
+
+    & i
+    {
+        cursor: pointer;
+    }
+}
+
+.googlePlusIcon
+{
+    color: #DB4437;
+}
+.twitterIcon {color: #41ABE1;}
+.facebookIcon {color: #3A5795;}
+
+
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+    .aboutArea
+    {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .contactArea
+    {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .logosArea
+    {
+        width: 100%;
+    }
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    .aboutArea { width: 100%; }
+    .contactArea { width: 100%; }
+    .logosArea { width: 100%; }
+}
+
+
+/*===========================*/
+/*中央主要介紹內容區塊*/
+/*===========================*/
+
+/*※※※ 餐廳特色 ※※※*/
+.featureArea
+{
+    padding: 50px 3%;
+    background-color: $color_Grey;
+}
+
+/*標題*/
+.featureTitle
+{
+    max-width: 461px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .titleHr
+    {
+        width: 25%;
+    }
+
+    & .titleText
+    {
+        width: 50%;
+        text-align: center;
+        color: $color_Brown;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+/*圖文說明*/
+.feature_Vegetables .picture { background-image: url("../img/feature_1.png"); }
+.feature_Chef .picture { background-image: url("../img/feature_2.png"); }
+.feature_Professional .picture { background-image: url("../img/feature_3.png"); }
+
+.featureItem
+{      
+    float: left;
+    width: 33.3%;
+    padding-top: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    & .picture
+    {
+        width: 200px;
+        height: 200px;
+        
+        -moz-border-radius: 100%;
+     -webkit-border-radius: 100%;
+             border-radius: 100%;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }  
+
+    & h3
+    {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 11px;
+        font-size: 18px;
+        line-height: 24px;
+        color: $color_Brown;
+    }
+
+    & p
+    {
+        font-size: 16px;
+        line-height: 21px;
+        color: $color_Brown;
+    }
+}
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+    .featureItem { width: 50%; }
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    .featureTitle .titleHr { display: none; }
+    .featureItem { width: 100%; }  
+    .featureArea
+    {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+
+/*===========================*/
+/*※※※ 今日主廚 ※※※*/
+
+.chefArea
+{
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: $color_Brown;
+    color: $color_Grey;
+}
+
+.chefPicture
+{
+    float: left;
+    width: 50%;
+    height: 460px;    
+    background-image: url("../img/main_chef_brown.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+.chefText
+{
+    float: left;
+    width: 50%;
+    padding-top: 81px;
+    padding-left: 3%;
+
+    & h3
+    {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    & h4
+    {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 16px;
+    }
+
+    & p
+    {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+    .chefArea
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .chefPicture
+    {
+        width: 92%;
+        background-image: url("../img/main_chef_brown@2x.png");
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 26px;
+    }
+    .chefText
+    {
+        width: 100%;
+        padding: 30px 4% 30px 4%;
+    }
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    .chefPicture
+    {
+        width: 100%;
+        background-image: url("../img/main_chef_brown.png");
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+}
+
+/*===========================*/
+/*※※※ 顧客推薦 ※※※*/
+
+.recommendArea
+{
+    padding: 50px 4% 30px 4%;
+    background-color: $color_Grey;
+
+    & h3
+    {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        color: $color_Brown;
+        margin-bottom: 32px;
+    }
+}
+
+.recommendItem
+{
+    position: relative;
+    width: 33.3%;
+    float: left;
+
+    padding: 22px 15px 20px 80px;
+
+    & h4
+    {
+        font-size: 18px;
+        line-height: 24px;
+        color: $color_Brown;
+        margin-bottom: 22px;
+    }
+    
+    & p
+    {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color_Brown;
+        margin-bottom: 22px;
+        text-align: left;
+    }
+
+    & .customerName
+    {
+        text-align: right;
+        color: rgba(61, 17, 0, 0.75 );
+        margin-bottom: 0px;
+    }
+
+}
+
+.customerPicture
+{
+    width: 67px;
+    height: 67px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+    .recommendItem { width: 50%; }
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    .recommendItem { width: 100%; }
+}
+
+
+/*===========================*/
+/*※※※ 預先訂位 ※※※*/
+.bookingArea
+{
+    width: 100%;
+    padding: 50px 4%;
+    background-color: $color_White;
+
+    & h3
+    {
+        font-size: 24px;
+        line-height: 32px;
+        color: $color_Brown;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 38px;
+    }
+}
+
+.map
+{
+    float: left;
+    width: 50%;
+    height: 386px;
+    background-image: url("../img/Map.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.inputArea
+{
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+
+    & label
+    {
+        display: block;
+        font-size: 14px;
+        line-height: 20px; 
+        color: $color_Brown;       
+        margin-bottom: 6px;
+        color: $color_Brown;
+    }
+}
+
+.inputTexts
+{
+    width: 100%;
+    padding: 5px 14px 5px 14px;
+    font-size: 16px;
+    line-height: 22px;
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    
+    &:hover
+    {
+        border: solid 1px #18e1af;
+        box-shadow: 0.5px 1px 2px #d6d6d6;
+    }
+}
+
+.radioTitles
+{
+    display: block;
+    float: left;
+}
+
+.radios
+{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    margin-right: 36px;
+    cursor: pointer;
+}
+
+.inputButtons
+{
+    float: right;
+    width: 70px;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F56C23;
+    color: #FFFFFF;
+    margin-top: 28px;
+    margin-left: 11px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 微軟正黑體;
+    font-size: 14px;
+
+    &:hover
+    {
+        border: solid 1px #18e1af;
+        box-shadow: 0.5px 1px 2px #d6d6d6;
+        cursor: pointer;
+    }
+}
+
+.cancelButton
+{
+    background-color: rgba(0,0,0,0.35);
+}
+
+/*【一般版型(768px以上)是大螢幕版型，為ipad(直式)以上 & PC使用的版型】*/
+/*【當解析度介於767px ~ 601px時，切換為中螢幕版型】*/
+@media (max-width: $size_MiddleVersion)
+{
+    .bookingArea
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .map
+    {       
+        width: 100%;        
+    }
+
+    .inputArea
+    {
+        width: 100%;
+        padding: 20px 30px 20px 30px;
+        
+    }
+}
+
+/*【當解析度為600px以下時，切換為小螢幕版型】*/
+@media (max-width: $size_SmallVersion)
+{
+    .bookingArea
+    {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .inputArea
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+}
+
